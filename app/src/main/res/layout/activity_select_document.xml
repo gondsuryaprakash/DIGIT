@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.example.surya.digit.SelectDocument">
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select \nDocument"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Passport"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/Passport"
+        android:layout_below="@+id/textView"
+        android:onClick="gotoEnterDetail"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:paddingRight="10dp"
+        android:onClick="gotoEnterDetailDL"
+        android:paddingLeft="10dp"
+        android:text="Drivers License"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/dl"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/Passport" />
+
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="National Identity Proof"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:onClick="gotoEnterDetailNID"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/nip"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/dl"
+        android:layout_alignStart="@+id/dl" />
+
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Residence Proof"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="gotoEnterDetailRP"
+        android:textAllCaps="false"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/button3"
+        android:layout_below="@+id/nip"
+        android:layout_alignEnd="@+id/nip"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.example.surya.digit.Begincheck">
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Begin Check"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="gotoverificationid"
+        android:textAllCaps="false"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/completeProfileButtonDone"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

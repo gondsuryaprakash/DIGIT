@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.example.surya.digit.VerificationofId">
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Identity Verification"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:onClick="gotoselectDocumnet"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/identityverification"
+
+
+        android:layout_marginTop="217dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Employement Verification"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:onClick="gotoselectDocumnetem"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/EmpVerification"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/identityverification"
+        android:layout_alignStart="@+id/eduverification" />
+
+
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Education Verification"
+        android:onClick="gotoselectDocumneted"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/eduverification"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/EmpVerification"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

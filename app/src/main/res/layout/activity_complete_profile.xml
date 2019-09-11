@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.example.surya.digit.CompleteProfile">
+    <TextView
+        android:id="@+id/completeProfileTextView"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete \nProfile"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+
+
+        />
+    <EditText
+
+
+        android:paddingRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/completeProfileName"
+        android:layout_below="@+id/completeProfileTextView"
+        android:layout_centerHorizontal="true" />
+    <EditText
+
+        android:paddingRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:hint="eMail Id"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/completeProfileemail"
+        android:layout_below="@+id/completeProfileName"
+        android:layout_centerHorizontal="true" />
+    <EditText
+
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Identification Proof Type"
+        android:inputType="numberSigned"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/completeProfileIdProoftype"
+        android:layout_below="@+id/completeProfileemail"
+        android:layout_centerHorizontal="true" />
+    <EditText
+
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:hint="Identification Proof Number"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonlayout"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/completeProfileProofNumber"
+        android:layout_below="@+id/completeProfileIdProoftype"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Next"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:onClick="gotocompleteprofilenext"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/completeProfileButtonContinue"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/completeProfileProofNumber"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+</RelativeLayout>
